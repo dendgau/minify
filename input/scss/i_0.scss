@@ -1,0 +1,155 @@
+body {
+  font-family: メイリオ, Meiryo, sans-serif;
+  font-weight: 500;
+}
+
+/* header */
+
+#gotoTop {
+  position: fixed;
+  bottom: 10px;
+  right: -150px;
+  transition: all 800ms ease;
+  z-index: 999;
+
+  &.show {
+    right: 10px;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+.header-top {
+  max-width: none;
+  margin: 0 auto;
+  width: 100%;
+
+  h1 {
+    font-size: 14px;
+    font-family: "HiraginoSans-W4";
+  }
+}
+
+.master-top-menu .favorite {
+  font-size: 12px;
+  font-family: "HiraginoSans-W4";
+  background: #ffffff;
+  color: #000000;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px 0;
+
+  .fa-star {
+    color: #f5c242;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .fa,
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.header__main .row {
+  margin: 0 auto;
+}
+
+h2.titlepage {
+  line-height: normal;
+  padding: 1em 0;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 16px;
+  font-family: "HiraginoSans-W6";
+}
+
+@media screen and (max-width: 1199px) {
+  .header .header__main {
+    border-bottom: 0;
+  }
+
+  .header__slogan {
+    background: #f5f5f5;
+
+    .titlepage {
+      font-size: 14px;
+    }
+  }
+}
+
+.header .logo {
+  width: 28%;
+  margin: 12px 0px;
+  height: 32px;
+  max-width: 115px;
+  position: absolute;
+}
+
+.header-control {
+  padding: 0;
+}
+
+.master-sub-header {
+  text-align: right;
+  padding: 10px 0;
+
+  div,
+  .userguide,
+  .travelcolumn,
+  .businesstrip {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 6px;
+  }
+
+  div {
+    &.userguide a {
+      padding-left: 20px;
+
+      &.btn-guide {
+        line-height: 30px;
+        text-align: center;
+        width: 110px;
+        color: #333;
+        border-radius: 4px;
+        border: 1px solid #d9d9d9;
+        cursor: pointer;
+        background: none;
+        padding: 0px;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+
+    &.travelcolumn,
+    &.businesstrip {
+      border-radius: 4px;
+      background-color: #E7F3F9;
+      padding: 7px 15px;
+    }
+
+    &.travelcolumn a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    &.businesstrip {
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      background: #fff2af;
+    }
+  }
+}
